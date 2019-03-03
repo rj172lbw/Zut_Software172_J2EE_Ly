@@ -7,7 +7,6 @@
         <servlet-name>WelcomeServlet</servlet-name>
         <servlet-class>view.WelcomeServlet</servlet-class>
     </servlet>
-    
     <servlet-mapping>
         <servlet-name>WelcomeServlet</servlet-name>
         <url-pattern>/Welcome</url-pattern>
