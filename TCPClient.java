@@ -17,7 +17,7 @@ public class TCPClient{
 				System.out.println("与Server连接成功！");
 			osw = new OutputStreamWriter(s.getOutputStream());
 			osw.write("来自客户端的问候！");
-			//s.close();                                 //此处关闭s会报错？？？？
+			//s.close();                                 //此处关闭s会报错？？？？？
 			osw.close();
 			
 		} catch (IOException e) {
@@ -30,19 +30,21 @@ public class TCPClient{
 	public void Writer() throws IOException {
 		
 		while(true) {
-			s = new Socket("127.0.0.1",8080);
-			osw = new OutputStreamWriter(s.getOutputStream());            //s已经关闭，需要重新连接
+			s = new Socket("127.0.0.1",8080);                                 //s并没有别关闭
+			osw = new OutputStreamWriter(s.getOutputStream());            //osw已经关闭，需要重新连接
 			System.out.print("这里发送信息：");
 			in = new Scanner(System.in);
 			str = in.nextLine();
 			System.out.println("发向服务器： "+str);
-			osw.write(str);
-			osw.close();                                                 //osw关闭会导致socket关闭吗？？？？？
+			osw.write(str);                                         
 			if(str.equalsIgnoreCase("再见")||str.equalsIgnoreCase("88")) {
 				in.close();
 				s.close();
 				System.out.println("通话结束！");
+				break;
 			}
+			osw.close(); 												//osw关闭会导致socket关闭吗？？？？？不关闭会造成阻塞
+			s.close();
 		}
 	}
 	
