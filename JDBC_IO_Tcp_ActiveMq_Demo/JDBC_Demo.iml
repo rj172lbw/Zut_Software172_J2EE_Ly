@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/mysql-connector-java-5.1.30-bin.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/data/tmp/jetty-0.0.0.0-8161-admin-_admin-any-2823207561783421399.dir/jsp" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/data/tmp/jetty-0.0.0.0-8161-admin-_admin-any-5762057172403291968.dir/jsp" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/data/tmp/jetty-0.0.0.0-8161-admin-_admin-any-7831089552814722919.dir/jsp" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/data/tmp/jetty-0.0.0.0-8161-admin-_admin-any-8100156169537393182.dir/jsp" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/amqp/java/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/mqtt/java/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/advanced-scenarios/jms-example-composite-destinations/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/advanced-scenarios/jms-example-durable-sub/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/advanced-scenarios/jms-example-exclusive-consumer/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/advanced-scenarios/jms-example-message-browser/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/advanced-scenarios/jms-example-queue-selector/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/advanced-scenarios/jms-example-queue/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/advanced-scenarios/jms-example-temp-destinations/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/advanced-scenarios/jms-example-topic/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/advanced-scenarios/jms-example-transaction/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/advanced-scenarios/jms-example-wildcard-consumer/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/ecommerce/src" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/exploring-jms/QueuePTPSamples/QueueMonitor" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/exploring-jms/QueuePTPSamples/QueueRoundTrip" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/exploring-jms/QueuePTPSamples/RequestReply" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/exploring-jms/QueuePTPSamples/SelectorTalk" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/exploring-jms/QueuePTPSamples/Talk" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/exploring-jms/QueuePTPSamples/TransactedTalk" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/exploring-jms/TopicPubSubSamples/Chat" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/exploring-jms/TopicPubSubSamples/DurableChat" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/exploring-jms/TopicPubSubSamples/HierarchicalChat" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/exploring-jms/TopicPubSubSamples/MessageMonitor" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/exploring-jms/TopicPubSubSamples/RequestReply" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/exploring-jms/TopicPubSubSamples/SelectorChat" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/exploring-jms/TopicPubSubSamples/TransactedChat" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/java/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/openwire/swissarmy/src" />
+          <root url="file://$MODULE_DIR$/../../apache-activemq-5.15.8/examples/stomp/java/src/main/java" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/../../apache-activemq-5.15.8" recursive="false" />
+      </library>
+    </orderEntry>
+  </component>
+</module>
