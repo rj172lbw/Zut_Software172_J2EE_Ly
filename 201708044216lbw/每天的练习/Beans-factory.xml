@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 通过静态工厂方法来配置bean， 注意不是配置静态工厂实例 ， 而是配置bean实例
+         class: 指向静态工厂的全类名
+         factory-method: 指向静态工厂的名字
+         constructor-arg: 可以通过这个来配置静态工厂的参数
+         -->
+    <bean id="car"
+          class="com.atguigu.spring.beans.factory.StaticCarFactory"
+          factory-method="getCar">
+        <constructor-arg value="we"></constructor-arg>
+    </bean>
+
+    <!-- 配置工厂的实例-->
+    <bean id="carfactory" class="com.atguigu.spring.beans.factory.InstanceCarFactory"></bean>
+
+    <!--factory-bean:指向实例工厂的bean -->
+    <bean id="car2" factory-bean="carfactory" factory-method="getCar">
+        <constructor-arg value="rng"></constructor-arg>
+    </bean>
+
+    <!-- 这里的两种通过工厂配置beand的方法我没有运行成功，参数并没有传入进去-->
+</beans>

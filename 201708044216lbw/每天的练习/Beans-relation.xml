@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <bean id="address" class="com.atguigu.spring.beans.autowire.Address">
+           <property name="city" value="Henan"></property>
+           <property name="street" value="浉河区"></property>
+       </bean>
+
+       <!-- 这里将它抽象化类似于java一样，不能被IOC容器实例化，只能被继承-->
+       <!--这个bean连class 都没有指定，必须为抽象类 -->
+       <bean id="address2" abstract="true">
+           <property name="city" value="Henan"></property>
+           <property name="street" value="平桥区"></property>
+       </bean>
+
+       <!--这里练习了bean的继承 这里子bean也可以重写 父类的bean-->
+       <bean id="address3" class="com.atguigu.spring.beans.autowire.Address"
+           p:street="君运花园" parent="address2">
+       </bean>
+
+       <bean id="car" class="com.atguigu.spring.beans.autowire.Car"
+        p:brand="奔驰" p:price="32423424">
+       </bean>
+
+       <bean id="person" class="com.atguigu.spring.beans.autowire.Person"
+       p:name="高兴" p:address-ref="address3" p:car-ref="car" depends-on="car">   <!--这里使person依赖于car的bean -->
+       </bean>                          <!--这里如果不使用p:car-ref则car则为空，因为person只是依赖
+                                          于car但并没有实例化car-->
+</beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置bean的scope
+    中 singleton为默认值，在整个容器的生命周期中只创建一个bean
+       prototype: 在容器初始化时不创建bean的实例，在每次请求时都创建一个bean-->
+    <bean id="car"
+          class="com.atguigu.spring.beans.autowire.Car"
+
+        scope="prototype" >
+        <property name="brand" value="奥迪"></property>
+        <property name="price" value="3030030"></property>
+    </bean>
+
+
+</beans>
